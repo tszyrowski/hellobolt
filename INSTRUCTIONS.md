@@ -82,3 +82,12 @@ Prep:
 - `link_shared`
 3. In the `App Unfurl Domains` -> `Add Domain` Enter the example domain, 'xyz.example.com', press **Done**.
 4. Save Changes and reinstall
+
+# Message shortcuts
+
+Prep:
+1. In `Interactivity & Shortcuts` -> `Shortcuts` -> `Create a Shortcut`, select `on message`
+- Action Name: `Remember This!`
+- Short Description: `An easy way to save interesting posts for later reference`
+- Callback ID: `mysave4later`
+2. Create,  Save Changes.
