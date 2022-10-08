@@ -91,3 +91,19 @@ Prep:
 - Short Description: `An easy way to save interesting posts for later reference`
 - Callback ID: `mysave4later`
 2. Create,  Save Changes.
+
+# Interactivity
+
+Will show message posted on start of the app (not invoked by a user)
+The message is posted with the user's identity.
+
+Prep:
+1. Get user token: Go to `OAuth & Permissions` -> `User Token Scopes` add:
+- `chat:write`
+- `channels:read`
+>After this the new `.` -> `OAuth Tokens for Your Workspace` -> `User OAuth Token`<br/>
+>`xoxp-*` will be generated.
+2. Add **user token** to **`.env`**<br/>
+`SLACK_USER_TOKEN=xoxp-******-******-******-**********`
+3. To get channel ID, right click the channel in the UI and select Copy Link. The alphanumeric string starting with a 'C' is your channel ID.
+`SLACK_BIRTHDAYS_CHANNEL=C**********`
