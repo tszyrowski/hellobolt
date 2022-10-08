@@ -71,3 +71,14 @@ Otherwise add: https://YOUR_NGROK_URL.ngrok.io/slack/events
 Prep
 1. If run on URL make sure the equest URL like: https://YOUR_NGROK_URL.ngrok.io/slack/events is in `Interactivity & Shortcuts` under `Interactivity` and `Select Menus`. In **socket mode** not needed
 2. Create new `Slash Commands` -> `Create a New Slash Command` with name `myweather` with some description and `Save`
+
+# Custom Unfurls
+
+Prep:
+1. in `OAuth & Permissions` -> `Bot Token Scopes` add:
+- `links:read`
+- `links:write`
+2. In `Event Subscriptions` -> `Subscribe to Bot events` subscribe to
+- `link_shared`
+3. In the `App Unfurl Domains` -> `Add Domain` Enter the example domain, 'xyz.example.com', press **Done**.
+4. Save Changes and reinstall
