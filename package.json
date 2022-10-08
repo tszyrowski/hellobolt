@@ -1,0 +1,15 @@
+{
+  "name": "hellobolt",
+  "version": "1.0.0",
+  "description": "slack official tutorial app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.12.1",
+    "dotenv": "^16.0.3"
+  }
+}
