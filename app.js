@@ -22,3 +22,9 @@ const app = new App({
 app.event('app_home_opened', ({ event, say }) => {
     say(`Hello world and <@${event.user}>! Greetings from socket mode!`)
 })
+
+// Listens to incoming messages that contain "hello"
+app.message('hello', ({ message, say }) => {
+    // say() sends a message to the channel where the event was triggered
+    say(`Hey there <@${message.user}>! This is response to your 'hello'!`)
+})

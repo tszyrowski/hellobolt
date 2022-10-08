@@ -44,3 +44,13 @@ $ nodemon app.js
 ⚡️Hello World.. Bolt is running in socket mode!
 [INFO]  socket-mode:SocketModeClient:0 Now connected to Slack
 ```
+# Events API
+
+Prep:
+1. Subscribe ot `Event Subscriptions` -> `Subscribe to bot events`:
+- `message.im`
+- `message.mpim`
+- `message.groups`
+- `message.channels`
+2. Save Changes, reinstall
+3. Make sure `App Settings` -> `App Home` -> `Allow users to send Slash commands and messages from the messages tab` [is ticked](https://stackoverflow.com/questions/67672427/cant-send-direct-message-to-slack-bot-feature-turned-off) and **Slack client might need to be reloaded with `Ctrl+R`**
