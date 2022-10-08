@@ -23,3 +23,24 @@ $ npm install dotenv
 11. Subscribe to a bot event by clicking the Add Bot User Event button and entering `app_home_opened` into the input box.
 12. Save Changes.
 13. We subscribed to the app_home_opened event and sent a message to the user when they opened a DM with our bot.
+
+# Socket Mode
+
+Socket mode you enables develop more securely using WebSockets URLs instead of public HTTP endpoints. 
+
+1. Go to your app’s Socket Mode page and enable Socket Mode
+2. Save Changes and reinstall the app
+> Note: ngrok is not needed
+
+**expected console:**
+```
+$ nodemon app.js
+[nodemon] 2.0.12
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+[INFO]  socket-mode:SocketModeClient:0 Going to establish a new connection to Slack ...
+⚡️Hello World.. Bolt is running in socket mode!
+[INFO]  socket-mode:SocketModeClient:0 Now connected to Slack
+```
