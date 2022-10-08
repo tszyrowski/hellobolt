@@ -54,3 +54,14 @@ Prep:
 - `message.channels`
 2. Save Changes, reinstall
 3. Make sure `App Settings` -> `App Home` -> `Allow users to send Slash commands and messages from the messages tab` [is ticked](https://stackoverflow.com/questions/67672427/cant-send-direct-message-to-slack-bot-feature-turned-off) and **Slack client might need to be reloaded with `Ctrl+R`**
+
+# Slash command
+
+Prep:
+1. `npm install axios`
+2. Select `Slash Commands` and then select `Create New Command` called  `'/mysurvey'` with short description
+3. Ensure `Interactivity & Shortcuts` -> `Interactivity` is turned on
+
+>As the app runs in `socket mode` no URL is needed, otherwise you may needed<br/>
+`Socket Mode is enabled. You won’t need to specify a Request URL.`<br/>
+Otherwise add: https://YOUR_NGROK_URL.ngrok.io/slack/events
