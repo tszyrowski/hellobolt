@@ -65,3 +65,9 @@ Prep:
 >As the app runs in `socket mode` no URL is needed, otherwise you may needed<br/>
 `Socket Mode is enabled. You won’t need to specify a Request URL.`<br/>
 Otherwise add: https://YOUR_NGROK_URL.ngrok.io/slack/events
+
+# Message menus
+
+Prep
+1. If run on URL make sure the equest URL like: https://YOUR_NGROK_URL.ngrok.io/slack/events is in `Interactivity & Shortcuts` under `Interactivity` and `Select Menus`. In **socket mode** not needed
+2. Create new `Slash Commands` -> `Create a New Slash Command` with name `myweather` with some description and `Save`
